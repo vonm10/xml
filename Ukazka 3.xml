@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:prihlaska xmlns:form="urn:x-kosek:schemas:pokus">
+    <form:hlavicka>
+        <form:sprava>Praha</form:sprava>
+        <form:variabilniSymbol>abcdefg</form:variabilniSymbol>
+    </form:hlavicka>
+    <form:telo>
+        <form:zakladniIdentifikace>
+            <form:prijmeni>Dlouhý</form:prijmeni>
+            <form:jmeno>Jarmil</form:jmeno>
+            <form:rodnePrijmeni/>
+            <form:rodneCislo>999900000</form:rodneCislo>
+            <form:titul>Ing</form:titul>
+            <form:datumNarozeni>1950-11-09</form:datumNarozeni>
+        </form:zakladniIdentifikace>
+        <form:prihlaskaKUcasti>
+            <form:prihlaseniOd>2021-05-01</form:prihlaseniOd>
+            <form:nazevPojistovny>VZP</form:nazevPojistovny>
+            <form:datumZahajeni>2021-05-11</form:datumZahajeni>
+        </form:prihlaskaKUcasti>
+        <form:uhrada>
+            <form:zasilani>Ano</form:zasilani>
+        </form:uhrada>
+        <form:udajeOPojisteni>
+            <form:organ>
+                <form:predchozi>OMV</form:predchozi>
+                <form:soucasny>VZP</form:soucasny>
+            </form:organ>
+            <form:predchoziDoba>
+                <form:od>2019-01-01</form:od>
+                <form:do>2021-04-30</form:do>
+            </form:predchoziDoba>
+            <form:cizozemskyNositel>
+                <form:nazev>Pojisteni pro inzenyry</form:nazev>
+                <form:cisloPojisteni>1029384756</form:cisloPojisteni>
+                <form:adresa>
+                    <form:ulice>Prazska</form:ulice>
+                    <form:cisloDomu>1</form:cisloDomu>
+                    <form:obec>Praha</form:obec>
+                    <form:PSC>11111</form:PSC>
+                    <form:stat>Ceska republika</form:stat>
+                </form:adresa>
+            </form:cizozemskyNositel>
+        </form:udajeOPojisteni>
+    </form:telo>
+</form:prihlaska>

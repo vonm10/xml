@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified" 
+    targetNamespace="urn:x-kosek:schemas:pokus"
+    xmlns="urn:x-kosek:schemas:pokus">
+        
+    <xs:element name="sprava" type="xs:string"/>
+    <xs:element name="variabilniSymbol" type="xs:string"/>
+    <xs:element name="prijmeni" type="xs:string"/>
+    <xs:element name="jmeno" type="xs:string"/>
+    <xs:element name="rodnePrijmeni" type="xs:string"/>
+    <xs:element name="rodneCislo" type="xs:string"/>
+    <xs:element name="titul" type="xs:string"/>
+    <xs:element name="datumNarozeni" type="xs:date"/>
+    <xs:element name="prihlaseniOd" type="xs:date"/>
+    <xs:element name="nazevPojistovny" type="xs:string"/>
+    <xs:element name="datumZahajeni" type="xs:date"/>
+    <xs:element name="zasilani" type="xs:string"/>
+    <xs:element name="predchozi" type="xs:string"/>
+    <xs:element name="soucasny" type="xs:string"/>
+    <xs:element name="od" type="xs:date"/>
+    <xs:element name="do" type="xs:date"/>
+    <xs:element name="ulice" type="xs:string"/>
+    <xs:element name="cisloDomu" type="xs:int"/>
+    <xs:element name="obec" type="xs:string"/>
+    <xs:element name="PSC" type="xs:string"/>
+    <xs:element name="stat" type="xs:string"/>
+    <xs:element name="nazev" type="xs:string"/>
+    <xs:element name="cisloPojisteni" type="xs:string"/>
+    
+    <xs:element name="hlavicka">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sprava"/>
+                <xs:element ref="variabilniSymbol"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="zakladniIdentifikace">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="prijmeni"/>
+                <xs:element ref="jmeno"/>
+                <xs:element ref="rodnePrijmeni"  minOccurs='0'/>
+                <xs:element ref="rodneCislo"/>
+                <xs:element ref="titul"  minOccurs='0'/>
+                <xs:element ref="datumNarozeni"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="prihlaskaKUcasti">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="prihlaseniOd"/>
+                <xs:element ref="nazevPojistovny"/>
+                <xs:element ref="datumZahajeni"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="uhrada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="zasilani"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="organ">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="predchozi"/>
+                <xs:element ref="soucasny"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="predchoziDoba">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="od"/>
+                <xs:element ref="do"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="adresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ulice"/>
+                <xs:element ref="cisloDomu"/>
+                <xs:element ref="obec"/>
+                <xs:element ref="PSC"/>
+                <xs:element ref="stat"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="cizozemskyNositel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nazev"/>
+                <xs:element ref="cisloPojisteni"/>
+                <xs:element ref="adresa"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="udajeOPojisteni">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="organ"/>
+                <xs:element ref="predchoziDoba"/>
+                <xs:element ref="cizozemskyNositel"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+   
+    <xs:element name="telo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="zakladniIdentifikace"/>
+                <xs:element ref="prihlaskaKUcasti"/>
+                <xs:element ref="uhrada"/>
+                <xs:element ref="udajeOPojisteni"  minOccurs='0'/>
+            </xs:sequence>
+        </xs:complexType>
+        
+        <xs:key name="rodneCislo">
+            <xs:selector xpath="zakladniIdentifikace"/>
+            <xs:field xpath="rodneCislo"/>
+        </xs:key>
+    </xs:element>
+    
+    
+    <xs:element name="prihlaska">      
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="hlavicka"/>
+                <xs:element ref="telo"/>
+            </xs:sequence>
+        </xs:complexType>
+        
+        <xs:key name="variabilniSymbol">
+            <xs:selector xpath="hlavicka"/>
+            <xs:field xpath="variabilniSymbol"/>
+        </xs:key>
+    </xs:element>
+</xs:schema>
+

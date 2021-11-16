@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:prihlaska xmlns:form="urn:x-kosek:schemas:pokus">
+    <form:hlavicka>
+        <form:sprava>Ostrava</form:sprava>
+        <form:variabilniSymbol>m1n3fnjn888</form:variabilniSymbol>
+    </form:hlavicka>
+    <form:telo>
+        <form:zakladniIdentifikace>
+            <form:prijmeni>Nová</form:prijmeni>
+            <form:jmeno>Lubomíra</form:jmeno>
+            <form:rodnePrijmeni/>
+            <form:rodneCislo>99081800221</form:rodneCislo>
+            <form:titul>Bc</form:titul>
+            <form:datumNarozeni>1998-03-01</form:datumNarozeni>
+        </form:zakladniIdentifikace>
+        <form:prihlaskaKUcasti>
+            <form:prihlaseniOd>2021-06-02</form:prihlaseniOd>
+            <form:nazevPojistovny>MIN</form:nazevPojistovny>
+            <form:datumZahajeni>2021-06-30</form:datumZahajeni>
+        </form:prihlaskaKUcasti>
+        <form:uhrada>
+            <form:zasilani>Ne</form:zasilani>
+        </form:uhrada>
+        <form:udajeOPojisteni>
+            <form:organ>
+                <form:predchozi>ANN</form:predchozi>
+                <form:soucasny>BOP</form:soucasny>
+            </form:organ>
+            <form:predchoziDoba>
+                <form:od>2012-01-01</form:od>
+                <form:do>2021-01-01</form:do>
+            </form:predchoziDoba>
+            <form:cizozemskyNositel>
+                <form:nazev>Pojisteni bez starosti</form:nazev>
+                <form:cisloPojisteni>99112204</form:cisloPojisteni>
+                <form:adresa>
+                    <form:ulice>Brnenská</form:ulice>
+                    <form:cisloDomu>2</form:cisloDomu>
+                    <form:obec>Brno</form:obec>
+                    <form:PSC>222222</form:PSC>
+                    <form:stat>Ceska republika</form:stat>
+                </form:adresa>
+            </form:cizozemskyNositel>
+        </form:udajeOPojisteni>
+    </form:telo>
+</form:prihlaska>

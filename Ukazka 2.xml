@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:prihlaska xmlns:form="urn:x-kosek:schemas:pokus">
+    <form:hlavicka>
+        <form:sprava>Praha</form:sprava>
+        <form:variabilniSymbol>123123abc</form:variabilniSymbol>
+    </form:hlavicka>
+    <form:telo>
+        <form:zakladniIdentifikace>
+            <form:prijmeni>Vondra</form:prijmeni>
+            <form:jmeno>Matyáš</form:jmeno>
+            <form:rodnePrijmeni/>
+            <form:rodneCislo>123123123</form:rodneCislo>
+            <form:titul/>
+            <form:datumNarozeni>2000-05-25</form:datumNarozeni>
+        </form:zakladniIdentifikace>
+        <form:prihlaskaKUcasti>
+            <form:prihlaseniOd>2021-03-25</form:prihlaseniOd>
+            <form:nazevPojistovny>VZP</form:nazevPojistovny>
+            <form:datumZahajeni>2021-03-26</form:datumZahajeni>
+        </form:prihlaskaKUcasti>
+        <form:uhrada>
+            <form:zasilani>Ano</form:zasilani>
+        </form:uhrada>
+    </form:telo>
+</form:prihlaska>

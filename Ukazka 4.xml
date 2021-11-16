@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:prihlaska xmlns:form="urn:x-kosek:schemas:pokus">
+    <form:hlavicka>
+        <form:sprava>Brno</form:sprava>
+        <form:variabilniSymbol>109aaac</form:variabilniSymbol>
+    </form:hlavicka>
+    <form:telo>
+        <form:zakladniIdentifikace>
+            <form:prijmeni>Komárová</form:prijmeni>
+            <form:jmeno>Karla</form:jmeno>
+            <form:rodnePrijmeni>Holubová</form:rodnePrijmeni>
+            <form:rodneCislo>089099012</form:rodneCislo>
+            <form:titul/>
+            <form:datumNarozeni>1990-08-15</form:datumNarozeni>
+        </form:zakladniIdentifikace>
+        <form:prihlaskaKUcasti>
+            <form:prihlaseniOd>2021-04-26</form:prihlaseniOd>
+            <form:nazevPojistovny>HVP</form:nazevPojistovny>
+            <form:datumZahajeni>2021-04-30</form:datumZahajeni>
+        </form:prihlaskaKUcasti>
+        <form:uhrada>
+            <form:zasilani>Ne</form:zasilani>
+        </form:uhrada>
+    </form:telo>
+</form:prihlaska>

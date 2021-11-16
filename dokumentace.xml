@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Seminární práce: Přihláška k dobrovolné účasti na nemocenském pojištění OSVČ</title>
+        <author>
+            <orgname>Fakulta informatiky a statistiky, VŠE v Praze</orgname>
+        </author>
+    </info>
+    <part>
+        <title>Dokumentace</title>
+        <chapter>
+            <title>Hlavička</title>
+            <table>
+                <title>Popis elementů v hlavičce</title>
+                <tgroup cols="2">
+                    <colspec colwidth="4cm"/>
+                    <colspec colwidth="12cm"/>
+                    <thead>
+                        <row>
+                            <entry>Element</entry>
+                            <entry>Popis</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>sprava</entry>
+                            <entry>Sídlo místně příslušného úřadu</entry>
+                        </row>
+                        <row>
+                            <entry>variabilniSymbol</entry>
+                            <entry>Variabilní symbol žadatele</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </chapter>
+        <chapter>
+            <title>Tělo</title>
+            <section>
+                <title>Základní identifikace</title>
+                <table>
+                    <title>Popis elementů</title>
+                    <tgroup cols="2">
+                        <colspec colwidth="4cm"/>
+                        <colspec colwidth="8cm"/>
+                        <thead>
+                            <row>
+                                <entry>Element</entry>
+                                <entry>Popis</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>prijmeni</entry>
+                                <entry>Příjmení</entry>
+                            </row>
+                            <row>
+                                <entry>jmeno</entry>
+                                <entry>Křestní jméno</entry>
+                            </row>
+                            <row>
+                                <entry>rodnePrijmeni</entry>
+                                <entry>Rodné příjmení</entry>
+                            </row>
+                            <row>
+                                <entry>rodneCislo</entry>
+                                <entry>Rodné číslo</entry>
+                            </row>
+                            <row>
+                                <entry>titul</entry>
+                                <entry>Akademický titul</entry>
+                            </row>
+                            <row>
+                                <entry>datumNarozeni</entry>
+                                <entry>Datum narození</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Přihláška k účasti</title>
+                <table>
+                    <title>Popis elementů</title>
+                    <tgroup cols="2">
+                        <colspec colwidth="4cm"/>
+                        <colspec colwidth="8cm"/>
+                        <thead>
+                            <row>
+                                <entry>Element</entry>
+                                <entry>Popis</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>prihlaseniOd</entry>
+                                <entry>Datum přihlášení k pojištění</entry>
+                            </row>
+                            <row>
+                                <entry>nazevPojistovny</entry>
+                                <entry>Název pojišťovny</entry>
+                            </row>
+                            <row>
+                                <entry>datumZahajeni</entry>
+                                <entry>Datum účinného zahájení pojištění</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Úhrada</title>
+                <table>
+                    <title>Popis elementů</title>
+                    <tgroup cols="2">
+                        <colspec colwidth="4cm"/>
+                        <colspec colwidth="8cm"/>
+                        <thead>
+                            <row>
+                                <entry>Element</entry>
+                                <entry>Popis</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>zasilani</entry>
+                                <entry>Volba zasílání poukázek poštou</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+            <section>
+                <title>Údaje o pojištění</title>
+                <table>
+                    <title>Popis elementů</title>
+                    <tgroup cols="2">
+                        <colspec colwidth="4cm"/>
+                        <colspec colwidth="8cm"/>
+                        <thead>
+                            <row>
+                                <entry>Element</entry>
+                                <entry>Popis</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>predchozi</entry>
+                                <entry>Název předchozího orgánu pojištění</entry>
+                            </row>
+                            <row>
+                                <entry>predchozi</entry>
+                                <entry>Název současného orgánu pojištění</entry>
+                            </row>
+                            <row>
+                                <entry>od</entry>
+                                <entry>Datum začátku předchozí doby pojištění</entry>
+                            </row>
+                            <row>
+                                <entry>do</entry>
+                                <entry>Datum konce předchozí doby pojištění</entry>
+                            </row>
+                            <row>
+                                <entry>nazev</entry>
+                                <entry>Název cizozemského nositele</entry>
+                            </row>
+                            <row>
+                                <entry>cisloPojisteni</entry>
+                                <entry>Číslo cizozemského pojištění</entry>
+                            </row>
+                            <row>
+                                <entry>ulice</entry>
+                                <entry>Ulice</entry>
+                            </row>
+                            <row>
+                                <entry>cisloDomu</entry>
+                                <entry>Číslo domu</entry>
+                            </row>
+                            <row>
+                                <entry>obec</entry>
+                                <entry>Obec</entry>
+                            </row>
+                            <row>
+                                <entry>PSC</entry>
+                                <entry>Poštovní směrovací číslo</entry>
+                            </row>
+                            <row>
+                                <entry>stat</entry>
+                                <entry>Stát</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+        </chapter>
+        <chapter>
+            <title>XML schéma</title>
+            <section>
+                <title>Popis</title>
+                <para>
+                    Pro validaci xml dokumentu jsem použil XML schéma W3C, které elementům definuje datový typ. Jako metodu jsem zvolil salámová kolečka.
+                </para>
+            </section>
+            <section>
+                <title>Zajímavá omezení</title>
+                <orderedlist>
+                    <listitem>
+                        <para>Dobrovolnost některých atributů pomocí <code>minOccurs='0'</code></para>
+                    </listitem>
+                    <listitem>
+                        <para>Referenční integrita pomocí <code>xs:key</code></para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Schematron</title>
+            <section>
+                <title>Popis</title>
+                <para>
+                    Jako doplněk k XML schématu jsem vytvořil dvě pravidla pomocí Schematronu.
+                </para>
+            </section>
+            <section>
+                <title>Zajímavá omezení</title>
+                <orderedlist>
+                    <listitem>
+                        <para>Obě pravidla kontrolují posloupnost datumů, tedy aby začátek intervalu nemohl být až po jeho konci.</para>
+                        <para>Využil jsem element <code>report</code>, který lépe vystihuje situaci (upozornění v případě porušení podmínky).</para>
+                    </listitem>
+                </orderedlist>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Transformace pomocí XSLT</title>
+            <section>
+                <title>Popis</title>
+                <para>
+                    Pro transformaci xml dokumentu do HTML jsem použil XSLT a formátování pomocí kaskádových stylů CSS.
+                </para>
+                <para>
+                    Jelikož se jedná o unifikovaný formulář, zvolil jsem pro celý dokument formát tabulky.
+                </para>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Transformace pomocí XSLT s FO</title>
+            <section>
+                <title>Popis</title>
+                <para>
+                    Pro transformaci xml dokumentu do PDF jsem použil XSLT s formátovacími objekty FO.
+                </para>
+                <para>
+                    Pokusil jsem se udržet stejný vzhled jako při transformaci do HTML, celý dokument je tedy tabulka s pevným ohraničením
+                </para>
+            </section>
+        </chapter>
+    </part>
+</book>
